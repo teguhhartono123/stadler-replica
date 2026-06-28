@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* 🟢 KANCING RADAR TAILWIND v4: Daftarkan folder components luar agar ter-scanning sempurna */
+@source "../components/**/*.{js,ts,jsx,tsx,mdx}";
+
+@theme {
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+}
