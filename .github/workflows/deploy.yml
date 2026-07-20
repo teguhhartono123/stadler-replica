@@ -13,5 +13,9 @@ jobs:
         curl -X POST \
         -H "Authorization: token ${{ secrets.PLAYWRIGHT_ACCESS_TOKEN }}" \
         -H "Accept: application/vnd.github.v3+json" \
-        -d '{"event_type": "run-playwright"}' \
+        -d '{"event_type": "run-playwright",
+             "client_payload": {
+                  "commit_message": "${{ github.event.head_commit.message }}"
+             }
+             }' \
          https://api.github.com/repos/teguhhartono123/plyStadler-test/dispatches 
