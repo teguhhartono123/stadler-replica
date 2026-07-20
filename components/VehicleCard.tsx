@@ -50,7 +50,7 @@ export default function VehicleCard({ id, name, type, speed, range, image }: Veh
         <div className="flex items-center gap-2 text-slate-400">
           <Zap className="w-3.5 h-3.5 text-emerald-400" />
           <div>
-            <p className="text-[10px] text-slate-500 uppercase font-bold">Top Speed</p>
+            <p className="text-[10px] text-slate-500 uppercase font-bold">Top score speed one</p>
             <p className="font-semibold text-slate-200">{speed}</p>
           </div>
         </div>
