@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* 🔌 Sektor Kanan: Toolbar Fitur & Saklar Bahasa */}
         <div className="flex items-center gap-4 text-slate-400">
           <div className="p-2 hover:bg-slate-900 rounded-lg hover:text-emerald-400 cursor-pointer transition-all">
-            <Search className="w-4.5 h-4.5" />
+            <Search className="w-[18px] h-[18px]" />
           </div>
           <div className="flex items-center gap-1.5 px-2.5 py-1.5 hover:bg-slate-900 rounded-lg hover:text-emerald-400 cursor-pointer text-xs font-bold tracking-wider uppercase transition-all">
             <Globe className="w-4 h-4" />

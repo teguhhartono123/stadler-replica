@@ -1,0 +1,17 @@
+name: Deploy and Trigger Tests
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  trigger-playwright:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Kirim Sinyal Pemicu ke Repositori Playwright
+      run: |
+        curl -X POST \
+        -H "Authorization: token ${{ secrets.PLAYWRIGHT_ACCESS_TOKEN }}" \
+        -H "Accept: application/vnd.github.v3+json" \
+        https://github.com \
+        -d '{"event_type": "run-playwright"}'
