@@ -18,19 +18,21 @@ export default function VehicleCard({ id, name, type, speed, range, image }: Veh
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      whileHover={{ y: -8 }}>
+      whileHover={{ y: -8 }}
+      className="relative group p-5 rounded-2xl bg-slate-900/40 border border-slate-900 hover:border-slate-800/80 transition-all duration-300 backdrop-blur-sm overflow-hidden"
+    >
 
-      {/* 🟢 Efek Sorot Glow Pojok Kartu */}
+      {/* Background Corner Light Glow Gradient Effect */}
       <div className="absolute -top-12 -right-12 w-32 h-32 bg-emerald-500/5 blur-2xl rounded-full group-hover:bg-emerald-500/10 transition-all duration-300" />
 
-      {/* 🖼️ Bingkai Foto Spek Super Car Layout */}
+      {/* Image Frame Wrapper & Specification Asset Layout */}
       <div className="relative w-full h-44 rounded-xl bg-slate-950 overflow-hidden border border-slate-800 flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10" />
-        {/* Placeholder Icon jika gambar belum di-bind */}
+        {/* Placeholder Icon fallbacks for unmatched static configurations */}
         <Zap className="w-12 h-12 text-slate-800 group-hover:text-emerald-500/40 group-hover:scale-110 transition-all duration-500" />
       </div>
 
-      {/* 🏷️ Info Identitas Kendaraan Cyber */}
+      {/* Vehicle Descriptive Identity Details Section */}
       <div className="mt-5">
         <span className="text-[10px] font-black tracking-widest text-emerald-400 uppercase bg-emerald-500/10 px-2 py-1 rounded-md">
           {type}
@@ -45,19 +47,19 @@ export default function VehicleCard({ id, name, type, speed, range, image }: Veh
         </div>
       </div>
 
-      {/* 📊 Sektor Grid Spek Performa Mesin */}
+      {/* Performance & Metric Specifications Data Layout Grid */}
       <div className="grid grid-cols-2 gap-4 mt-5 pt-4 border-t border-slate-800/60 text-xs">
         <div className="flex items-center gap-2 text-slate-400">
           <Zap className="w-3.5 h-3.5 text-emerald-400" />
           <div>
-            <p className="text-[10px] text-slate-500 uppercase font-bold">Top score speed one</p>
+            <p className="text-[10px] text-slate-500 uppercase font-bold">Top Speed</p>
             <p className="font-semibold text-slate-200">{speed}</p>
           </div>
         </div>
         <div className="flex items-center gap-2 text-slate-400">
           <Shield className="w-3.5 h-3.5 text-teal-400" />
           <div>
-            <p className="text-[10px] text-slate-500 uppercase font-bold">Autonomy</p>
+            <p className="text-[10px] text-slate-500 uppercase font-bold">Autonomy Range</p>
             <p className="font-semibold text-slate-200">{range}</p>
           </div>
         </div>

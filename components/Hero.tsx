@@ -33,7 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="text-4xl md:text-6xl font-black text-white tracking-tight leading-none max-w-4xl"
         >
-          WE ENGINEER HIGH-PERFORMANCE <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">DIGITAL ECOSYSTEMS</span>
+          CRAFTING PRESTIGE WEB ARCHITECTURES <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">FOR ENTERPRISE </span>
         </motion.h1>
 
         {/* 📝 Sub-headline Deskripsi ATS-Friendly */}
@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-slate-400 mt-6 text-sm md:text-lg max-w-2xl leading-relaxed font-medium"
         >
-          Empowering enterprise businesses with production-grade serverless architectures, custom AI orchestrations, and flawless web experiences engineered for global scale.
+          Accelerating global digital dominance through zero-compromise security audits, premium cloud native environments, and bespoke automated engineering solutions.
         </motion.p>
 
         {/* ⚡ Dual CTA Button Workspace */}
